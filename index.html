@@ -1,0 +1,31 @@
+</!DOCTYPE html>
+ 
+<html>
+
+<head>
+	<title>Password validator</title>
+	<script defer src="password.js"></script>
+</head>
+<body>
+	<div id="contain">
+	<ul>
+		<li>password must be less than 35 digits</li>
+		<li>Password must be greater than 10 digits</li>
+		<li>password must contain a numbers</li>
+		<li>password cant be password</li>
+	</ul>
+	<div id="error"></div>
+<form id="form" action="/" method="GET">
+	<div>
+		<label for="name">name</label>
+		<input id="name" name="name" type="text" required>
+	</div>
+	<div>
+		<label for="password">password</label>
+		<input id="password" name="password" type="password" required>
+	</div>
+	<button type="submit">submit</button>
+</form>
+</body>
+</html>
+
