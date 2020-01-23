@@ -5,7 +5,7 @@ const errorElement= document.getElementById('error')
 
 form.addEventListener('submit',(e) => {
 	let messages= [];
-	let message= [];
+	
 	if (name.value === ''|| name.value == null){
 		messages.push('name is required')
 	}
@@ -17,7 +17,7 @@ form.addEventListener('submit',(e) => {
   
 	}
 	if(messages.length = 0){
-	message.push("your password is"+password+"and it meets requirements")
+	alert("your password is"+password+"and it meets requirements")
 	}
 		if (messages.length > 0) {
 	e.preventDefault()
